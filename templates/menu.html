@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le menu du Maroc</title>
+</head>
+
+<header>  
+    <div class="container">
+        <a href="/" style="text-decoration:none">
+            <h1 class="title">فرحة المغرب</h1></a>
+        <div>
+            <a class="buttons" href="horaire" target="_self" title="Nos horaires">
+                <button class="buttons">Nos horaires</button></a>
+            <a class="buttons" href="menu" target="_self" title="Notre menu">
+                <button class="buttons">Le menu</button></a>
+        </div>
+        <div class="menu mobile">
+            <a class="menu mobile" title="Options de navigation">
+            <button class="menu mobile">|||</button></a>        
+        </div> 
+    </div>
+    <hr>
+</header>
+
+    <h2>Le menu</h2>
+    <dl>
+        <dt>tajine</dt>
+            <dd>Un tajine ou tagine ou tadjine est tout autant un plat de cuisson et de service,
+                large et peu profond surmonté d'un couvercle conique en terre cuite parfois vernissé, qu'une préparation culinaire cuite dans cet ustensile.</dd>
+        <dt>Couscous</dt>
+         <dd>Le couscous est d'une part une semoule de blé dur préparée à l'huile d'olive et d'autre part,
+            une spécialité culinaire issue de la cuisine berbère, à base de couscous, de légumes, d'épices, d'huile d'olive et de viande ou de poisson.</dd>
+    </dl>
+    <video controls muted loop>
+        <source src="{{ url_for('static', filename='video tajine.mp4')}}">
+        Ce navigateur ne supporte pas les videos HTML5
+    </video>
+
+    <footer>
+        <hr>
+        <p class="adresse">5 Pl. de la Mairie, 68000 Colmar</p>
+        <a href="https://www.facebook.com/lesdelicesdumaroc68/" target=_blank title="Notre page facebook">
+            <img class="adresse" src="{{ url_for('static', filename='logo facebook.webp') }}" height="50" width="50" alt="Logo facebook" title="Logo facebook">
+        </a>
+        <hr>
+    </footer>
+</body>
+</html>

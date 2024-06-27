@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos horaires</title>
+</head>
+
+<body>
+    <header>  
+        <div class="container">
+            <a href="/" style="text-decoration:none">
+                <h1 class="title">فرحة المغرب</h1></a>
+            <div>
+                <a class="buttons" href="horaire" target="_self" title="Nos horaires">
+                    <button class="buttons">Nos horaires</button></a>
+                <a class="buttons" href="menu" target="_self" title="Notre menu">
+                    <button class="buttons">Le menu</button></a>
+            </div>
+            <div class="menu mobile">
+                <a class="menu mobile" title="Options de navigation">
+                <button class="menu mobile">|||</button></a>        
+            </div> 
+        </div>
+        <hr>
+    </header>
+        <!--Tableau des horaires-->
+    <table class="table_horaire" bgcolor="black" width="800">
+        <!--colone du haut-->
+        <tr bgcolor="grey" align="center">
+            <th width="100"> </th>
+            <th width="100">Lundi</th>
+            <th width="100">Mardi</th>
+            <th width="100">Mecredi</th>
+            <th width="100">Jeudi</th>
+            <th width="100">Vendredi</th>
+            <th width="100">Samedi</th>
+            <th width="100">Dimanche</th>
+        </tr>  
+        <!--colone du millieu-->
+        <tr bgcolor="lightgrey" align="center">
+            <td width="100">Matin</th>
+            <td width="100">Fermé</th>
+            <td width="100">12:00 à 14h</th>
+            <td width="100">12:00 à 14h</th>
+            <td width="100">12:00 à 14h</th>
+            <td width="100">12:00 à 14h</th>
+            <td width="100">12:00 à 14h</th>
+            <td width="100">12:00 à 14h</th>
+        </tr>
+        <!--colone du bas-->
+        <tr bgcolor="lightgrey" align="center">
+            <td width="100">Soir</th>
+            <td width="100">fermé</th>
+            <td width="100">19h 22h</th>
+            <td width="100">19h 22h</th>
+            <td width="100">19h 22h</th>
+            <td width="100">19h 22h</th>
+            <td width="100">19h 22h</th>
+            <td width="100">18h45 22h</th>
+        </tr>
+    </table>
+
+
+    <footer>
+        <hr>
+        <p class="adresse">5 Pl. de la Mairie, 68000 Colmar</p>
+        <a href="https://www.facebook.com/lesdelicesdumaroc68/" target=_blank title="Notre page facebook">
+            <img class="adresse" src="{{ url_for('static', filename='logo facebook.webp') }}" height="50" width="50" alt="Logo facebook" title="Logo facebook">
+        </a>
+        <hr>
+    </footer>
+    
+</body>
+</html>
