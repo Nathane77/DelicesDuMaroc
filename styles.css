@@ -1,0 +1,173 @@
+.title:hover {   
+    color: #29040d;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    background: linear-gradient(#8A0B26, #29040d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+div.border {
+    display: block;
+    border-style: solid;
+    border-color: #FFD700;
+    width: 99.9%;
+    border-width: 1px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+p {
+    font-family: "consolas", Helvetica, sans-serif;
+    color: black;
+}
+
+p.adresse{
+    position: fixed;  
+    right: 8px;
+    color: #FFD700;
+}
+
+/* Change */
+
+a > button {
+    background-color: #a72440;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.buttons button:hover {
+    background-color: #5b081a;
+    color: #FFFFFF; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.title { 
+    font-family: "Amiri", Helvetica, sans-serif;
+    color: #FFD700;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: linear-gradient(#8A0B26, #29040d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Mobile Responsive*/
+
+.menubg{
+    position: absolute;
+    background-color: #470717;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+@media (max-width: 844px) {
+    div.button_desktop{
+        display:none;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        margin: 3px 0;
+      }
+
+    .button_mobile button{
+        display: flex;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        width: 100vw;
+        border-radius: 10px;
+        outline: none;
+        text-decoration: none;
+    }
+
+    footer{
+        display:none;
+    }
+
+    .table_horaire{
+        display:none
+        
+    }
+
+
+    
+    .button_burger
+{
+    display: flex;
+    width: 100vw;
+    margin-top: 2px;
+    border-radius: 10px;
+    background-color: #29040d;
+}
+
+.menubg > * {
+    align-content: start;
+}
+
+}
+
+@media (min-width: 844px) {
+
+    .button_menu{
+        display: none;
+    }
+
+    .button_desktop{
+        position:flex;
+        align-self:end;
+        
+    }
+
+    button.button_desktop{
+        justify-items: auto;
+    }
+
+    a.button_mobile{
+        display:none;
+    }
+
+}
+
+

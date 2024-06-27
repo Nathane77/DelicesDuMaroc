@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Site du restaurant Les delices du Maroc à Colmar">
+    <meta name="keywords" content="restaurant, Colmar, Maroc, magrehb">
+    <meta name="author" content="Nassim Hammoudi">
+    <title>Les Delices du Maroc</title>
+</head>
+<body>
+    <header>  
+        <div class="container">
+            <a href="/" style="text-decoration:none">
+                <h1 class="title">فرحة المغرب</h1></a>
+                
+                <div class="button_menu">
+                    <a class="button_menu" title="Options de navigation">
+                    <button class="button_menu">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>  
+                        </span>
+                    </button></a>
+                </div>
+
+            <div class="button_desktop">
+                <a class="button_desktop" href="horaire" target="_self" title="Nos horaires">
+                    <button class="button_desktop">Nos horaires</button></a>
+                <a class="button_desktop" href="menu" target="_self" title="Notre menu">
+                    <button class="button_desktop">Le menu</button></a>
+            </div>
+        </div>
+
+        <div class="border"></div>
+
+        <div class="menubg">        
+            <div class="button_mobile">
+                <a class="button_mobile" href="horaire" target="_self" title="Nos horaires">
+                    <button class="button_mobile">Nos horaires</button></a>
+
+                <a class="button_mobile" href="menu" target="_self" title="Notre menu">
+                    <button class="button_mobile">Le menu</button></a>
+                </div>
+            </div>
+            
+        </div> 
+    </header>
+
+    <footer>
+        <div class="info">
+            <div class="border"></div>
+            <p class="adresse">5 Pl. de la Mairie, 68000 Colmar</p>
+            <a href="https://www.facebook.com/lesdelicesdumaroc68/" target=_blank title="Notre page facebook">
+            <img class="adresse" src="{{ url_for('static', filename='logo facebook.webp') }}" height="50" width="50" alt="Logo facebook" title="Logo facebook"></a>
+            <div class="border"></div>
+        </div>
+    </footer>
+    <script src="{{url_for('static', filename='javascript/menuburger.js')}}"></script>
+</body>
+</html>
