@@ -42,8 +42,6 @@ p.adresse{
     color: #FFD700;
 }
 
-/* Change */
-
 a > button {
     background-color: #a72440;
     color: #FFFFFF;
@@ -54,7 +52,6 @@ a > button {
     outline: none;
     text-decoration: none;
 }
-
 
 .buttons button:hover {
     background-color: #5b081a;
@@ -86,34 +83,32 @@ header {
     padding: 0;
 }
 
-
-
 /*Mobile Responsive*/
 
-.menubg{
+.menubg {
+    display: none;
     position: absolute;
     background-color: #470717;
     left: 0;
     width: 100vw;
     height: 100vh;
-
 }
 
 @media (max-width: 844px) {
-    div.button_desktop{
-        display:none;
+    .button_desktop {
+        display: none;
     }
 
     .burger-icon span {
         display: block;
-        width: 15px;
-        height: 2px;
+        width: 25px;
+        height: 3px;
         background-color: white;
-        margin: 3px 0;
-      }
+        margin: 5px 0;
+    }
 
-    .button_mobile button{
-        display: flex;
+    .button_mobile button {
+        display: block;
         margin-bottom: 4px;
         margin-top: 4px;
         width: 100vw;
@@ -122,52 +117,56 @@ header {
         text-decoration: none;
     }
 
-    footer{
-        display:none;
-    }
-
-    .table_horaire{
-        display:none
-        
-    }
-
-
-    
-    .button_burger
-{
-    display: flex;
-    width: 100vw;
-    margin-top: 2px;
-    border-radius: 10px;
-    background-color: #29040d;
-}
-
-.menubg > * {
-    align-content: start;
-}
-
-}
-
-@media (min-width: 844px) {
-
-    .button_menu{
+    footer {
         display: none;
     }
 
-    .button_desktop{
-        position:flex;
-        align-self:end;
-        
+    .table_horaire {
+        display: none;
     }
 
-    button.button_desktop{
+    .burger-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mobile-nav {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    .mobile-nav .button_mobile {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mobile-nav .button_mobile a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+@media (min-width: 844px) {
+    .button_menu {
+        display: none;
+    }
+
+    .button_desktop {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    button.button_desktop {
         justify-items: auto;
     }
 
-    a.button_mobile{
-        display:none;
+    a.button_mobile {
+        display: none;
     }
-
 }
-
-
