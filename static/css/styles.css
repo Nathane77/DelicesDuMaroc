@@ -2,7 +2,7 @@
     color: #29040d;
 }
 
-html{
+html {
     margin: 0;
     padding: 0;
 }
@@ -36,7 +36,7 @@ p {
     color: black;
 }
 
-p.adresse{
+p.adresse {
     position: fixed;  
     right: 8px;
     color: #FFD700;
@@ -86,7 +86,7 @@ header {
 /*Mobile Responsive*/
 
 .menubg {
-    display: none;
+    display: none; /* Hide mobile nav background by default */
     position: absolute;
     background-color: #470717;
     left: 0;
@@ -99,12 +99,20 @@ header {
         display: none;
     }
 
-    .burger-icon span {
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .burger-menu span {
         display: block;
         width: 25px;
         height: 3px;
         background-color: white;
-        margin: 5px 0;
+        margin: 4px 0;
     }
 
     .button_mobile button {
@@ -123,13 +131,6 @@ header {
 
     .table_horaire {
         display: none;
-    }
-
-    .burger-menu {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        padding: 10px;
     }
 
     .mobile-nav {
